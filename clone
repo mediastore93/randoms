@@ -4,9 +4,9 @@ CLONE:
 
 diskutil list
 diskutil unmountDisk /dev/disk4
-sudo dd if=/dev/disk3 of=~/raspbian_backup.img
+sudo dd if=/dev/disk4 of=~/raspbian_backup.img
 
 RESTORING:
 
-diskutil unmountDisk /dev/disk3
-sudo dd if=~/raspbian_backup.img of=/dev/disk3
+diskutil unmountDisk /dev/disk4
+sudo dd if=~/raspbian_backup.img of=/dev/disk4
