@@ -8,8 +8,6 @@ sudo modprobe bcm2835-v4l2
 
 USE THIS:
 
+VFAT
 sudo mount -o uid=pi,gid=pi /dev/sda2 /media/pi/
-
-/dev/sda2 /media/pi vfat auto,user,rw,uid=pi,gid=pi 0  0
-
 rsync -avz -e "ssh -p ***" --progress **.0.0.**:/media/pi/* /media/pi
