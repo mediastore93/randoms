@@ -3,10 +3,10 @@ https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/
 CLONE:
 
 diskutil list
-diskutil unmountDisk /dev/disk4
-sudo dd if=/dev/disk4 of=~/raspbian_backup.img
+diskutil unmountDisk /dev/disk2
+sudo dd if=/dev/disk2 of=~/raspbian_backup.img
 
 RESTORING:
 
-diskutil unmountDisk /dev/disk4
-sudo dd if=~/raspbian_backup.img of=/dev/disk4
+diskutil unmountDisk /dev/disk2
+sudo dd if=~/raspbian_backup.img of=/dev/disk2
