@@ -1,0 +1,10 @@
+proc            /proc           proc    defaults          0       0
+/dev/mmcblk0p1  /boot           vfat    defaults          0       2
+/dev/mmcblk0p2  /               ext4    defaults,noatime  0       1
+
+UUID=4850-1BF2 /media/pi/PC auto nofail,uid=1000,gid=1000,noatime 0 0
+UUID=C546-1D1C /media/pi/PC2 auto nofail,uid=1000,gid=1000,noatime 0 0
+
+
+# a swapfile is not a swap partition, no line here
+#   use  dphys-swapfile swap[on|off]  for that
