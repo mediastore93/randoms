@@ -10,3 +10,7 @@ RESTORING:
 
 diskutil unmountDisk /dev/disk2
 sudo dd if=~/raspbian_backup.img of=/dev/disk2
+
+Ubuntu:
+
+sudo dd if=/dev/sdb of=~/hassio_0111.img status=progress
