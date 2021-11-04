@@ -1,0 +1,12 @@
+# script for rsync from docker
+
+#!/bin/bash
+
+now="$(date)"
+
+echo "Starting sync with Docker starting: $now !"
+echo ".........................................."
+
+rsync -avzh -e "ssh -p 2212" --delete --progress --exclude-from=rsync_exclude.txt pi@10.0.0.23:/media/pi/plex /mnt/usb/
+
+echo "Ending sync with Docker: $now !"
