@@ -4,7 +4,7 @@ CLONE:
 
 diskutil list
 diskutil unmountDisk /dev/disk2
-sudo dd if=/dev/disk2 of=~/raspbian_backup.img
+sudo dd if=/dev/disk2 of=/Users/terry/backup_0208.img
 
 RESTORING:
 
